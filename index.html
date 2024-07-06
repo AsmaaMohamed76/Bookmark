@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKMARK</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&display=swap">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <!-- STLE SHEAT -->
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <!-- TITLE -->
+    <header class="pt-4">
+        <h1 class="display-4 mx-auto pt-5">Bookmarker</h1>
+    </header>
+    <section>
+        <div class="container">
+            <!-- BOOKMARK INPUTS -->
+            <div class="bookmark_body d-flex justify-content-center  flex-column">
+                <h2 class="fs-3 fw-semibold mx-auto mt-4"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></h2>
+                <label for="siteName" class="fw-semibold"><i class="fa-solid fa-book-bookmark pe-2"></i>Site Name</label>
+                <input type="text" id="siteName" class=" form-control mb-4 mt-2" placeholder="Bookmark Name">
+                <label for="siteURL" class="fw-semibold"><i class="fa-solid fa-link pe-2"></i>Site URL</label>
+                <input type="url" id="siteURL" class=" form-control mb-4 mt-2 " placeholder="Website URL">
+                <button id="subBtn" class="btn bttn mt-4 py-2 px-5 d-block mx-auto"> Submit</button>
+            </div>
+            <input type="text" id="search" class=" form-control w-25 mt-5 search-bg  " placeholder="Search">
+            <!-- BOOKMARK TABLE -->
+            <table class=" table mt-4 text-center">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <!-- CONTENT FROM JS WHICH USER ENTER -->
+                <tbody id="content">
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>
